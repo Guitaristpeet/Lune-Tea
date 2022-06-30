@@ -19,17 +19,18 @@ a {
 }
 :root {
     --heebo: 'Heebo', sans-serif;
-    --booni: 'Bodoni Moda', serif;
+    --bodoni: 'Bodoni Moda', serif;
     --beige: #96b7d5;
     --white: #f3efe9;
     --black: #010101;
     --lightblue: #7396d2;
     --blue: #5d7fb8;
+    --orange: #eeb14f;
 }
 body {
     font-family: var(--heebo);
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 /* ------------------ */
@@ -44,6 +45,8 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px 30px;
+    position: absolute;
+    width: 100%;
 }
 @media (min-width: 1020px) {
     svg.logo {
@@ -90,3 +93,51 @@ header {
         padding-bottom: 15px;
     }
 }
+/* ------------------ */
+/* Hero */
+/* ------------------ */
+.hero {
+    height: 100vh;
+    background-image: url("https://lunetea.pl/wp-content/uploads/2021/11/BANER_LUNETEA-2.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.custom-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape svg {
+    position: relative;
+    display: block;
+    width: calc(137% + 1.3px);
+    height: 182px;
+}
+.custom-shape .shape-fill {
+    fill: var(--white);
+}
+h1 {
+    font-family: var(--bodoni);
+    font-size: 74px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.btn {
+    width: 360px;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    background-color: var(--orange);
+    padding: 18px;
+    border-radius: 50px;
+}
+
