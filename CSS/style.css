@@ -1,3 +1,6 @@
+/* ------------------ */
+/* Universal Style */
+/* ------------------ */
 * {
     margin: 0;
     padding: 0;
@@ -10,4 +13,80 @@ img,
 iframe {
     width: 100%;
     vertical-align: bottom;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    --heebo: 'Heebo', sans-serif;
+    --booni: 'Bodoni Moda', serif;
+    --beige: #96b7d5;
+    --white: #f3efe9;
+    --black: #010101;
+    --lightblue: #7396d2;
+    --blue: #5d7fb8;
+}
+body {
+    font-family: var(--heebo);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+/* ------------------ */
+/* Header */
+/* ------------------ */
+.nav-left a,
+.nav-right a {
+    display: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 30px;
+}
+@media (min-width: 1020px) {
+    svg.logo {
+        width:  35%;
+    }
+    .nav-left,
+    .nav-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .cart-element {
+        display: inline-block;
+        margin-left: 45px;
+    }
+    .nav-left-top,
+    .nav-right-top {
+        display: flex;
+        align-items: center;
+        border-bottom: solid 1px var(--black);
+        margin-top: 20px;
+    }
+    .nav-left a,
+    .nav-right a {
+        display: inline-block;
+        color: var(--black);
+    }
+    .nav-left a {
+        margin-right: 45px;
+    }
+    .nav-right a {
+        margin-left: 45px;
+    }
+    .nav-right-top {
+        justify-content: right;
+        padding-bottom: 15px;
+    }
+    .nav-left-top {
+        height: 48px;
+        justify-content: left;
+        padding-bottom: 15px;
+    }
 }
