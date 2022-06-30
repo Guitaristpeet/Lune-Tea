@@ -131,13 +131,43 @@ h1 {
     font-weight: 700;
     margin-bottom: 10px;
 }
+/* ------------------ */
+/* Hero Button*/
+/* ------------------ */
 .btn {
+    display: inline-block;
     width: 360px;
     text-transform: uppercase;
+    text-align: center;
     font-size: 16px;
+    color: var(--black);
     letter-spacing: 2.5px;
     background-color: var(--orange);
     padding: 18px;
     border-radius: 50px;
+    position: relative;
+    transition: all 0.3s ease;
+    z-index: 1;
+    overflow: hidden;
 }
-
+.btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-4%, 5%);
+    width: 0;
+    height: 110%;
+    background-color: var(--black);
+    border-radius: 50px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.btn:hover::before{
+    width: 110%;
+    opacity: 1;
+}
+.btn:hover {
+    color: var(--white);
+}
