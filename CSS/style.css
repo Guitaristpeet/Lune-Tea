@@ -177,7 +177,7 @@ h1 {
 .best-seller {
     background-color: var(--white);
     height: 830px;
-    padding-top: 50px;
+    padding: 50px 0 50px 0;
 }
 .bestsellers-title {
     text-align: center;
@@ -259,7 +259,66 @@ transition-timing-function:linear!important;
 /* ------------------ */
 .alchemy {
     background-color: var(--white);
+    padding: 100px 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.alchemy-img {
+    width: 470px;
+    height: 610px;
+    background: url(/ASSETS/jasmine-huang-RSQmXaCUvn0-unsplash.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 80px;
+}
+.alchemy-title {
+    width: 300px;
+    font-size: 64px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+.alchemy-p {
+    width: 330px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.alchemy-btn {
+    width: 260px;
+    color: var(--white);
+    letter-spacing: 2.5px;
+    background-color: var(--black);
+}
+.alchemy-content {
+    position: relative;
+}
+.star {
+    width: 110px;
+    height: auto;
+    position: absolute;
+}
+.star1 {
+    top: -100px;
+    right: -20px;
+}
+.star2 {
+    width: 70px;
+    top: -30px;
+    right: -40px;
+}
+.star3 {
+    bottom: -140px;
+    left: -80px;
+}
+.alchemy-btn::before {
+    background-color: var(--beige);
+}
+.alchemy-btn:hover {
+    color: var(--black);
+}
+
+
+
 
 
 footer {
