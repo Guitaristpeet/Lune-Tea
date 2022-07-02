@@ -321,8 +321,13 @@ transition-timing-function:linear!important;
 .alchemy-btn:hover {
     color: var(--black);
 }
-
-
+/* ------------------ */
+/* all-about Section*/
+/* ------------------ */
+.all-about {
+    background-color: var(--white);
+    text-align: center;
+}
 
 
 
