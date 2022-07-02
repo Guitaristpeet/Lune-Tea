@@ -328,9 +328,27 @@ transition-timing-function:linear!important;
     background-color: var(--white);
     text-align: center;
 }
-
-
-
+.all-about-cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.all-about-img1,
+.all-about-img2,
+.all-about-img3,
+.all-about-img4 {
+    width: 200px;
+    height: 200px;
+    background: url(/ASSETS/jasmine-huang-RSQmXaCUvn0-unsplash.jpg) center no-repeat;
+    background-size: cover;
+}
+.all-about-box {
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 footer {
 height: 700px;
 }
