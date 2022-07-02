@@ -176,7 +176,7 @@ h1 {
 /* ------------------ */
 .best-seller {
     background-color: var(--white);
-    height: 1000px;
+    height: 830px;
     padding-top: 50px;
 }
 .bestsellers-title {
@@ -253,6 +253,12 @@ transition-timing-function:linear!important;
     .product-btn {
         width: 200px;
     }
+}
+/* ------------------ */
+/* Alchemy Section*/
+/* ------------------ */
+.alchemy {
+    background-color: var(--white);
 }
 
 
