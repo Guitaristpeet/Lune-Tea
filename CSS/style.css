@@ -106,6 +106,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .custom-shape {
     position: absolute;
@@ -130,6 +131,20 @@ h1 {
     font-size: 76px;
     font-weight: 800;
     margin-bottom: 10px;
+    line-height: 1.1;
+}
+@media (max-width: 980px) {
+    h1 {
+        margin-bottom: 100px;
+    }
+    .custom-shape svg {
+        height: 110px;
+    }
+}
+@media (max-width: 780px) {
+    h1 {
+        font-size: 40px;
+    }
 }
 /* ------------------ */
 /* Hero Button*/
@@ -171,6 +186,17 @@ h1 {
 .btn:hover {
     color: var(--white);
 }
+@media (max-width: 980px) {
+    .hero {
+        position: relative;
+    }
+    .hero a {
+        position: absolute;
+        bottom: 160px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
 /* ------------------ */
 /* Bestsellers Section*/
 /* ------------------ */
@@ -183,6 +209,7 @@ h2 {
     font-family: var(--bodoni);
     font-size: 66px;
     font-weight: 800;
+    line-height: 1;
 }
 .bestsellers-title {
     text-align: center;
@@ -278,8 +305,6 @@ transition-timing-function:linear!important;
 }
 .alchemy-title {
     width: 300px;
-    /* font-size: 64px; */
-    line-height: 1;
     margin-bottom: 30px;
 }
 .alchemy-p {
@@ -320,6 +345,30 @@ transition-timing-function:linear!important;
 }
 .alchemy-btn:hover {
     color: var(--black);
+}
+@media (max-width: 980px) {
+    .alchemy {
+        flex-direction: column;
+        padding: 100px 45px;
+        justify-content: center;
+        text-align: center;
+    }
+    .star {
+        display: none;
+    }
+    .alchemy-title {
+        width: 100%;
+    }
+    .alchemy-p {
+        width: 100%;
+    }
+    .alchemy-img {
+        width: 100%;
+        height: 1080px;
+    }
+    .alchemy-btn {
+        margin-bottom: 35px;
+    }
 }
 /* ------------------ */
 /* all-about Section*/
@@ -370,6 +419,23 @@ transition-timing-function:linear!important;
 .curve-blue .shape-fill {
     fill: var(--blue);
 }
+@media (max-width: 980px) {
+    .all-about-cont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 50px;
+        justify-items: center;
+    }
+    .all-about-box {
+        align-self: center;
+    }
+    .all-about-img1,
+    .all-about-img2,
+    .all-about-img3,
+    .all-about-img4 {
+        margin-bottom: 50px;
+    }
+}
 /* ------------------ */
 /* testimonials section*/
 /* ------------------ */
@@ -396,6 +462,11 @@ transition-timing-function:linear!important;
     letter-spacing: 1.4px;
     margin-bottom: 70px;
 }
+@media (max-width: 980px) {
+    .testimonials-box:last-child {
+        display: none;
+    }
+}
 /* ------------------ */
 /* Magic Section*/
 /* ------------------ */
@@ -417,10 +488,6 @@ transition-timing-function:linear!important;
 .magic-box {
     margin: 0 15px;
 }
-/* .magic-box a {
-    width: fit-content;
-    height: fit-content;
-} */
 .magic-box img {
     width: 16.5vw;
     border-radius: 20px;
@@ -444,6 +511,13 @@ transition-timing-function:linear!important;
     }
     .magic-container {
         transform: translate(-50%, 0);
+    }
+}
+
+
+@media (max-width: 780px) {
+    h2 {
+        font-size: 40px;
     }
 }
 
