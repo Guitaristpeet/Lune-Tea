@@ -24,7 +24,7 @@ a {
     --white: #f3efe9;
     --black: #010101;
     --lightblue: #7396d2;
-    --blue: #5d7fb8;
+    --blue: #3b3171;
     --orange: #eeb14f;
 }
 body {
@@ -122,7 +122,7 @@ header {
     width: calc(137% + 1.3px);
     height: 182px;
 }
-.custom-shape .shape-fill {
+.curve-white .shape-fill {
     fill: var(--white);
 }
 h1 {
@@ -327,11 +327,16 @@ transition-timing-function:linear!important;
 .all-about {
     background-color: var(--white);
     text-align: center;
+    padding-bottom: 200px;
+    position: relative;
+}
+.all-about h2 {
+    margin-bottom: 130px;
 }
 .all-about-cont {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
 }
 .all-about-img1,
 .all-about-img2,
@@ -341,14 +346,41 @@ transition-timing-function:linear!important;
     height: 200px;
     background: url(/ASSETS/jasmine-huang-RSQmXaCUvn0-unsplash.jpg) center no-repeat;
     background-size: cover;
+    margin-bottom: 65px;
 }
 .all-about-box {
     width: 325px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.all-about-title {
+    font-size: 19px;
+    color: var(--blue);
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.all-about-p {
+    font-size: 17px;
+    letter-spacing: 1.4px;
+    
+}
+.curve-blue .shape-fill {
+    fill: var(--blue);
+}
+
+
+
+
+
+
+
+/* ------------------ */
+/* Footer*/
+/* ------------------ */
 footer {
 height: 700px;
 }
