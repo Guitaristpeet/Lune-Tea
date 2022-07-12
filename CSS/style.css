@@ -291,24 +291,24 @@ transition-timing-function:linear!important;
 /* ------------------ */
 .alchemy {
     background-color: var(--white);
-    padding: 100px 130px;
+    padding: 100px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .alchemy-img {
-    width: 470px;
-    height: 610px;
+    width: 570px;
+    height: 710px;
     background: url(/ASSETS/jasmine-huang-RSQmXaCUvn0-unsplash.jpg) center no-repeat;
     background-size: cover;
     border-radius: 80px;
 }
 .alchemy-title {
-    width: 300px;
+    width: 500px;
     margin-bottom: 30px;
 }
 .alchemy-p {
-    width: 330px;
+    width: 30vw;
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 25px;
@@ -345,6 +345,34 @@ transition-timing-function:linear!important;
 }
 .alchemy-btn:hover {
     color: var(--black);
+}
+@media (max-width: 1400px) {
+    .alchemy {
+        padding: 100px 130px;
+    }
+    .alchemy-img {
+        width: 470px;
+        height: 610px;
+    }
+    .alchemy-p {
+        width: 380px;
+    }
+    .alchemy-title {
+        width: 300px;
+    }
+}
+@media (max-width: 1140px) {
+    .alchemy {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .alchemy-p {
+        width: 330px;
+    }
+    .alchemy-img {
+        width: 450px;
+        height: 590px;
+    }
 }
 @media (max-width: 980px) {
     .alchemy {
