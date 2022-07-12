@@ -146,6 +146,14 @@ h1 {
         font-size: 40px;
     }
 }
+@media (max-width: 580px) {
+    h1 {
+       max-width: 500px;
+    }
+    .custom-shape svg {
+        height: 60px;
+    }
+}
 /* ------------------ */
 /* Hero Button*/
 /* ------------------ */
@@ -391,11 +399,17 @@ transition-timing-function:linear!important;
         width: 100%;
     }
     .alchemy-img {
-        width: 100%;
-        height: 1080px;
+        width: 90vw;
+        height: 80vh;
     }
     .alchemy-btn {
         margin-bottom: 35px;
+    }
+}
+@media (max-width: 580px) {
+    .alchemy-img {
+        width: 90vw;
+        height: 60vh;
     }
 }
 /* ------------------ */
@@ -464,6 +478,14 @@ transition-timing-function:linear!important;
         margin-bottom: 50px;
     }
 }
+@media (max-width: 580px) {
+    .all-about-cont {
+        grid-template-columns: 1fr;
+    }
+    .all-about-box {
+        min-width: 400px;
+    }
+}
 /* ------------------ */
 /* testimonials section*/
 /* ------------------ */
@@ -492,6 +514,14 @@ transition-timing-function:linear!important;
 }
 @media (max-width: 980px) {
     .testimonials-box:last-child {
+        display: none;
+    }
+}
+@media (max-width: 580px) {
+    .testimonials-cont {
+        flex-direction: column;
+    }
+    .testimonials-box:nth-child(2) {
         display: none;
     }
 }
@@ -541,11 +571,17 @@ transition-timing-function:linear!important;
         transform: translate(-50%, 0);
     }
 }
-
-
 @media (max-width: 780px) {
     h2 {
         font-size: 40px;
+    }
+}
+@media (max-width: 580px) {
+    .magic-box img {
+        width: 70vw;
+    }
+    .magic-container {
+        transform: translate(-54.7%, 0);
     }
 }
 
