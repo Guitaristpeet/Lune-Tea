@@ -1,5 +1,4 @@
-const swiper = new Swiper('.swiper', {
-    // spaceBetween: 100,
+const swiper1 = new Swiper('.swiper1', {
     slidesPerView: 3.7,
     loop: true,
     autoplay: {
@@ -38,6 +37,31 @@ const swiper = new Swiper('.swiper', {
         100: {
             slidesPerView: 1.5,
             spaceBetween: 50,
+        },
+    }
+});
+const swiper2 = new Swiper('.swiper2', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    speed: 200,
+    loop: true,
+    grabCursor: true,
+    followFinger: true,
+    breakpoints: {
+        780: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            autoplay: false,
+            grabCursor: false,
+            followFinger: false,
         },
     }
 });
