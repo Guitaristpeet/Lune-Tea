@@ -263,7 +263,7 @@ background-color: var(--orange);
 padding: 18px;
 border-radius: 50px;
 }
-.swiper-wrapper {
+.swiper-wrapper.smooth-slide{
 -webkit-transition-timing-function:linear!important;
 -o-transition-timing-function:linear!important; 
 transition-timing-function:linear!important; 
@@ -493,7 +493,7 @@ transition-timing-function:linear!important;
 .testimonials {
     background-color: var(--blue);
     color: var(--white);
-    padding: 90px 20px 220px 20px;
+    padding: 90px 0 220px 0;
     position: relative;
     text-align: center;
 }
@@ -503,7 +503,7 @@ transition-timing-function:linear!important;
     align-items: flex-start;
 }
 .testimonials-box {
-    margin: 0 30px 0 30px;
+    padding: 0 30px 0 30px;
 }
 .testimonials h2 {
     margin-bottom: 130px;
@@ -513,7 +513,7 @@ transition-timing-function:linear!important;
     letter-spacing: 1.4px;
     margin-bottom: 70px;
 }
-@media (max-width: 980px) {
+/* @media (max-width: 980px) {
     .testimonials-box:last-child {
         display: none;
     }
@@ -525,7 +525,7 @@ transition-timing-function:linear!important;
     .testimonials-box:nth-child(2) {
         display: none;
     }
-}
+} */
 /* ------------------ */
 /* Magic Section*/
 /* ------------------ */
@@ -632,7 +632,8 @@ transition-timing-function:linear!important;
     margin-bottom: 17px;
     line-height: 1.8;
 }
-.swiper2 {
+.swiper2,
+.swiper3 {
     width: 100vw;
     padding: 0 20px;
     text-align: center;

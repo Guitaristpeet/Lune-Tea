@@ -65,3 +65,28 @@ const swiper2 = new Swiper('.swiper2', {
         },
     }
 });
+const swiper3 = new Swiper('.swiper3', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    speed: 200,
+    loop: true,
+    grabCursor: true,
+    followFinger: true,
+    breakpoints: {
+        780: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            autoplay: false,
+            grabCursor: false,
+            followFinger: false,
+        },
+    }
+});
